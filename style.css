@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.bg-image {
+    height: 100%; /* Full Height */
+    /* Center and scale image as backgrounds */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* List of multiple image backgrounds */
+.imgmain { background-image: url(assets/main-bg.jpg); }
+.imgthegames { background-image: url(assets/the-games-bg.jpg); }
+.imgfeatures { background-image: url(assets/features.jpg); }
+.imgsystemreq { background-image: url(assets/requirements.png); }
+.imgtopscore {
+    background-image: url(assets/top-score-bg.png);
+    background-color: rgba(0,0,0,0.8); /* Add opacity */}
+.imgfooter { background-image: url(assets/main-bg.jpg); } /* bg image sementara, asset belum ada */
+
+/* MENU BAR STYLE */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10%; /* 10% of main background */
+    background: rgba(0,0,0,0.5); /* Black menu bar with opacity */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo {
+    cursor: pointer;
+}
+.menu-bar ul {
+    list-style: none;
+    padding-right: 150px;
+}
+.menu-bar ul li, .right-menu-bar ul li {
+    display: inline-block;
+    width: 110px;
+}
+.menu-bar ul li a, .right-menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.8s ease 0s; /* hover transition */
+}
+.menu-bar ul li a:hover, .right-menu-bar ul li a:hover {
+    color: orange; /* change color when hovering */
+}
+
+/* MAIN GRID STYLE */
+.main-grid {
+    display: grid;
+    height: 70%;
+    align-content: center;
+    grid-row-gap: 50px;
+    grid-template-rows: 60px 25px 60px;
+    justify-content: center;
+}
+.main-grid-top {
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-grid-center {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.main-grid-bottom {
+    text-align: center;
+}
+.main-button {
+    border: 1px solid orange;
+    border-radius: 3px;
+    background-color: orange;
+    padding: 20px 80px 20px 80px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* The story & Smooth scroll down page */
+.main-scrolldown{
+    display: grid;
+    height: 20%;
+    align-content: center;
+    grid-row-gap: 3px;
+    justify-content: center;
+}
+.scrolldown-text {
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.scrolldown-arrow {
+    text-align: center;
+}
