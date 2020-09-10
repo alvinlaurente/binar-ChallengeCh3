@@ -14,7 +14,7 @@ body, html {
     overflow-y: scroll;
 }
 
-.bg-image {
+.container {
     height: 100%; /* Full Height */
     /* Center and scale image as backgrounds */
     background-position: center;
@@ -22,15 +22,37 @@ body, html {
     background-size: cover;
 }
 
-/* List of multiple image backgrounds */
-.imgmain { background-image: url(assets/main-bg.jpg); }
-.imgthegames { background-image: url(assets/the-games-bg.jpg); }
-.imgfeatures { background-image: url(assets/features.jpg); }
-.imgsystemreq { background-image: url(assets/requirements.png); }
-.imgtopscore {
-    background-image: url(assets/top-score-bg.png);
-    background-color: rgba(0,0,0,0.8); /* Add opacity */}
-.imgfooter { background-image: url(assets/main-bg.jpg); } /* bg image sementara, asset belum ada */
+/* List of multiple container backgrounds */
+.main {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/main-bg.jpg);
+}
+.thegames {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/the-games-bg.jpg);
+}
+.features {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/features.jpg);
+}
+.systemreq {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/requirements.png);
+}
+.topscore {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/top-score-bg.png);
+    background-color: rgba(0,0,0,0.8); /* Add opacity */
+}
+.footer {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/main-bg.jpg); /* bg image sementara, asset belum ada */
+}
+
+.separator {
+    height: 100px;
+    background-color: black;
+}
 
 /* MENU BAR STYLE */
 .header {
