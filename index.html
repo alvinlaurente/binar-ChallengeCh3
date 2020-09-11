@@ -19,12 +19,15 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg bg-dark nav-color">
-            <a class="navbar-brand ml-5 pl-5" href="#"><img src="assets/game-controller.png" alt=""></a>
+        <nav class="sticky navbar navbar-expand-lg bg-dark  fixed-top px-5 nav-color">
+            <a class="navbar-brand mx-3" href="index.html">
+                <img src="assets/game-controller.png" width="30" height="30" alt="">
+                    <span style="text-indent:20px;">game.com</span>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><p class="menu"></p></span>
             </button>
-            <div class="collapse navbar-collapse ml-5" id="navbarNav">
+            <div class="collapse navbar-collapse pl-4" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">HOME</a>
@@ -51,38 +54,30 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="container-fluid bg-style" id="bg-main">
-            <div class="main-grid">
-                <div class="main-grid-top">
-                    Play traditional game
-                </div>
-                <div class="main-grid-center">
-                    Experience new traditional game play
-                </div>
-                <div class="main-grid-bottom">
-                    <button class="main-button" type="button" onclick="location.href='play.html'">Play now</button>
-                </div>
-            </div>
+        
+        <div class="container-fluid d-flex flex-column h-100 justify-content-center align-items-center bg-style" id="bg-main">
+            <div class="landing-text"><p class="landing-title">PLAY TRADITIONAL GAME</p></div>
+            <div class="landing-text"><p class="landing-caption">Experience new traditional game play</p></div>
+            <div class="landing-text"><button class="btn btn-warning btn-lg" class="landing-button" href="#">PLAY NOW</button></div>
         </div>
-        <div class="container-fluid bg-style" id="separator"></div>
+        <div class="container-fluid" id="separator"></div>
         <div class="container-fluid bg-style" id="bg-thegames">
 
         </div>
-        <div class="container-fluid bg-style" id="separator"></div>
+        <div class="container-fluid" id="separator"></div>
         <div class="container-fluid bg-style" id="bg-features">
 
         </div>
-        <div class="container-fluid bg-style" id="separator"></div>
+        <div class="container-fluid" id="separator"></div>
         <div class="container-fluid bg-style" id="bg-systemreq">
 
         </div>
-        <div class="container-fluid bg-style" id="separator"></div>
+        <div class="container-fluid" id="separator"></div>
         <div class="container-fluid bg-style" id="bg-topscores">
 
         </div>
-        <div class="container-fluid bg-style" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-newsletter">
+        <div class="container-fluid" id="separator"></div>
+        <div class="container-fluid bg-style" id="bg-footer">
 
         </div>
     </body>
