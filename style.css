@@ -1,105 +1,71 @@
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+/* Global Style */
+
+/* Navbar */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgba(52,58,64) !important;;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-    color: white;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+.navbar .nav-link {
+    margin: 0px 12px 0px 12px;
 }
 
-/* Navigation Bar Style */
-nav.bg-dark {
-    background-color: rgba(0,0,0,0.3) !important;
-}
-nav.navbar {
-    padding: 2;
-}
-nav.navbar ul li a {
-    text-decoration: none !important;
-    color: white;
-    transition: all 0.8s ease 0s; /* Hover-off transition */
-}
-nav.navbar ul li a:hover {
-    color: gold;
-    background: rgba(0,0,0,0.3);
-    transition: all 0.8s ease 0s;/* Hover-on */
-}
-a.navbar-brand {
-    padding: 0;
-    font-size: 1.5rem;
-    color: white;
+.navbar a {
     text-decoration: none;
-}
-button.navbar-toggler {
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 0.5rem;
-}
-button.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: rgb(255,255,255) !important;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+    transition: all 0.8s ease 0s; /* Hover off transition */
 }
 
-/* Separate between 2 backgrounds */
-div.separator {
-    height: 150px;
-    background-color: black;
+.navbar a:hover {
+    transition: all 0.8 ease 0s; /* Hover on transtion */
+    color: gold !important;
 }
 
-/* Multiple Backgrounds Style */
-div.bg-style {
-    height: 100%; /* Full Height */
-    /* Center and scale image as backgrounds */
+/* Jumbotron */
+.jumbotron {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%),
+    url(assets/main-bg.jpg);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-#bg-main {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/main-bg.jpg);
-}
-#bg-thegames {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/the-games-bg.jpg);
-}
-#bg-features {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/features.jpg);
-}
-#bg-systemreq {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/requirements.png);
-}
-#bg-topscores {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/top-score-bg.png);
-    background-color: rgba(0,0,0,0.8); /* Add opacity */
-}
-#bg-footer {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
-    url(assets/top-score-bg.png); /* bg image sementara, asset belum ada */
-    background-color: rgba(0,0,0,0.8); /* Add opacity */
+    height: 100vh;
+    text-align: center;
+    color: white;
 }
 
-p.landing-title {
-    font-size: 6vw;
-    font-weight: bolder;
+.jumbotron .display-1 {
+    margin-top: 150px;
+    font-size: 36px;
+    font-weight: 600;
     text-transform: uppercase;
-    text-align: center;
 }
-p.landing-caption {
-    font-size: 2vw;
-    text-align: center;
+
+.jumbotron .display-2 {
+    font-size: 15px;
+    font-weight: 600;
 }
-button.landing-button {
-    color: black;
-    font-size: 2vw;
-    font-weight: bold;
+
+.jumbotron a {
+    margin-top: 15px;
+    padding: 10px 50px 10px 50px;
+    font-size: 15px;
+    font-weight: 600;
     text-transform: uppercase;
-    cursor: pointer;
+    border-radius: 5px;
+    background-color: gold;
+    border-color: gold;
+}
+
+.jumbotron .dropdown {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.jumbotron .display-3 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
 }

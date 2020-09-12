@@ -1,0 +1,32 @@
+/* Desktop Version */
+@media (min-width: 768px) {
+    
+    /* Navbar */
+    .navbar {
+        background-color: rgba(0,0,0,0.3) !important; /* Transparent navbar on Desktop */
+    }
+
+    .navbar .navbar-center {
+        margin-left: 20px;
+    }
+
+    .navbar a:hover {
+        background: rgba(0,0,0,0.3); /* Add background transparent transition */
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        margin-top: -56px;
+    }
+
+    .jumbotron .display-1 {
+        font-size: 60px;
+    }
+}
+
+/*
+@media (min-width: 992px) {
+    .jumbotron .dropdown {
+        margin-top: 150px;
+    }
+} */

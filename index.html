@@ -1,87 +1,85 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="game, traditional game, dx11, play">
-        <meta name="description" content="Experience new traditional gameplay! We provide various nostalgic traditional games here
-        for everyone who miss their childhood. Play now for free and enjoy.">
-        <meta name="author" content="Alvin Laurent Ertanto">
-        <link rel="shortcut icon" href="/assets/game-controller.png" type="image/x-icon" >
-        <title>Play Traditional Game | Home</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alvin Laurent Ertanto">
+    <meta name="keywords" content="game, traditional game, dx11, play">
+    <meta name="description" content="Experience new traditional gameplay! We provide various nostalgic traditional games here for everyone who miss their childhood. Play now for free and enjoy.">
 
-        <!-- Bootstrap and style-->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-        <style></style>
-        <script></script>
-    </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <body>
-        <nav class="sticky navbar navbar-expand-lg bg-dark  fixed-top px-5 nav-color">
-            <a class="navbar-brand mx-3" href="index.html">
-                <img src="assets/game-controller.png" width="30" height="30" alt="">
-                    <span style="text-indent:20px;">game.com</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><p class="menu"></p></span>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop_style.css">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <title>Play Traditional Game | Home</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand mr-5" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse pl-4" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto navbar-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="#">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">WORK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT ME</a>
+                        <a class="nav-link" href="#">Login</a>
                     </li>
                 </ul>
             </div>
-            <div class="navbar-text collapse navbar-collapse mr-5 justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SIGN UP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LOGIN</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-        <div class="container-fluid d-flex flex-column h-100 justify-content-center align-items-center bg-style" id="bg-main">
-            <div class="landing-text"><p class="landing-title">PLAY TRADITIONAL GAME</p></div>
-            <div class="landing-text"><p class="landing-caption">Experience new traditional game play</p></div>
-            <div class="landing-text"><button class="btn btn-warning btn-lg" class="landing-button" href="#">PLAY NOW</button></div>
         </div>
-        <div class="container-fluid" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-thegames">
+    </nav>
+    <!-- Navbar end -->
 
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container ">
+            <h1 class="display-1">Play traditional game</h1>
+            <h2 class="display-2">Experience new traditional game play</h2>
+            <a href="#" class="btn btn-warning">Play now</a>
         </div>
-        <div class="container-fluid" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-features">
-
+        <div class="container dropdown">
+            <h1 class="display-3">The story</h1>
+            <svg width="3vw" height="auto" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg>
         </div>
-        <div class="container-fluid" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-systemreq">
+      </div>
+    <!-- Jumbotron end -->
 
-        </div>
-        <div class="container-fluid" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-topscores">
-
-        </div>
-        <div class="container-fluid" id="separator"></div>
-        <div class="container-fluid bg-style" id="bg-footer">
-
-        </div>
-    </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
