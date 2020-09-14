@@ -1,15 +1,19 @@
 /* Global Style */
+body, html {
+    color: white;
+    scroll-behavior: smooth;
+}
 
 /* Navbar */
 .navbar {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 2vh;
     text-transform: uppercase;
-    background-color: rgba(52,58,64) !important;;
+    background-color: rgba(52,58,64) !important;
 }
 
 .navbar .nav-link {
-    margin: 0px 12px 0px 12px;
+    margin: 0px 1vw 0px 1vw;
 }
 
 .navbar a {
@@ -26,32 +30,43 @@
 
 /* Jumbotron */
 .jumbotron {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%),
-    url(assets/main-bg.jpg);
+    /* Multiple background with no-repeat */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
-    color: white;
+    margin-bottom: auto;
 }
 
-.jumbotron .display-1 {
-    margin-top: 150px;
-    font-size: 36px;
+/* Separator - separate between backgrounds */
+.separator {
+    height: 5vh;
+    background-color: black;
+}
+
+/* Play Now content */
+.playnow {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%),
+    url(assets/main-bg.jpg);
+}
+
+.playnow .container .display-1 {
+    margin-top: 25vh;
+    font-size: 5.5vh;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.jumbotron .display-2 {
-    font-size: 15px;
+.playnow .container .display-2 {
+    font-size: 2.5vh;
     font-weight: 600;
 }
 
-.jumbotron a {
-    margin-top: 15px;
+.playnow .container a {
+    margin-top: 4vh;
     padding: 10px 50px 10px 50px;
-    font-size: 15px;
+    font-size: 2.5vh;
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 5px;
@@ -59,13 +74,69 @@
     border-color: gold;
 }
 
-.jumbotron .dropdown {
-    margin-top: 100px;
-    margin-bottom: 50px;
+.playnow .to-gameoption {
+    position: absolute;
+    bottom: 5vh;
+    padding: 0px;
 }
 
-.jumbotron .display-3 {
-    font-size: 12px;
+.playnow .to-gameoption .display-3 {
+    font-size: 2vh;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.playnow .to-gameoption a {
+    color: white;
+}
+
+/* Game Option content */
+.gameoption {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%),
+    url(assets/the-games-bg.jpg);
+}
+
+.gameoption .container {
+    text-align: left;
+}
+
+.gameoption h1 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.gameoption h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Carousel Game Option */
+.gameoption .carousel-inner img {
+    margin: auto;
+}
+
+.gameoption .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0px 15px -15px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
+  }
+
+.gameoption .carousel-indicators .active {
+    background-color: rgba(255,255,255,1) !important;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 1;
+}
+
+.gameoption .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left" fill="white" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/> </svg>');
+}
+
+.gameoption .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml, <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right" fill="white" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M6 12.796L11.481 8 6 3.204v9.592zm.659.753l5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/> </svg>');
 }

@@ -1,5 +1,5 @@
-/* Desktop Version */
-@media (min-width: 768px) {
+/* Tablet & Desktop Version */
+@media (min-width: 992px) {
     
     /* Navbar */
     .navbar {
@@ -14,19 +14,24 @@
         background: rgba(0,0,0,0.3); /* Add background transparent transition */
     }
 
-    /* Jumbotron */
-    .jumbotron {
-        margin-top: -56px;
+    /* Jumbotron Play Now content */
+    .playnow {
+        margin-top: -9vh;
     }
 
-    .jumbotron .display-1 {
-        font-size: 60px;
+    .playnow .container .display-1 {
+        font-size: 10vh;
+    }
+
+    .playnow .container .display-2 {
+        font-size: 3vh;
+    }
+
+    .playnow .container a {
+        font-size: 2vh;
+    }
+
+    .playnow .to-gameoption .display-3 {
+        font-size: 2vh;
     }
 }
-
-/*
-@media (min-width: 992px) {
-    .jumbotron .dropdown {
-        margin-top: 150px;
-    }
-} */
