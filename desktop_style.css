@@ -1,0 +1,101 @@
+/* Desktop Version */
+@media (min-width: 992px) {
+    
+    /* Navbar */
+    .navbar {
+        background-color: rgba(0,0,0,0.3) !important; /* Transparent navbar on Desktop */
+    }
+
+    .navbar .navbar-center {
+        margin-left: 20px;
+    }
+
+    .navbar a:hover {
+        background: rgba(0,0,0,0.3); /* Add background transparent transition */
+    }
+
+    /* Jumbotron Play Now content */
+    .playnow {
+        margin-top: -9vh;
+    }
+
+    .playnow .container .display-1 {
+        font-size: 10vh;
+    }
+
+    .playnow .container .display-2 {
+        font-size: 3vh;
+    }
+
+    .playnow .container a {
+        font-size: 2vh;
+    }
+
+    .playnow .to-gameoption .display-3 {
+        font-size: 2vh;
+    }
+
+    /* Features content */
+    .features .col-md-6 {
+        margin-top: 10vh;
+    }
+
+    .features h3 {
+        font-size: 2vw;
+    }
+
+    .features h1 {
+        font-size: 6.5vw;
+    }
+
+    .features h2 {
+        font-size: 2vw;
+    }
+
+    .features p {
+        font-size: 1.5vw;
+    }
+
+    /* System Requirements content */
+    .sysreq h5{
+        font-size: 1.5vw;
+    }
+
+    .sysreq h1 {
+        font-size: 4vw;
+    }
+
+    .sysreq h2 {
+        font-size: 1.5vw;
+    }
+
+    .sysreq p {
+        font-size: 1vw;
+    }
+}
+
+
+/* Tablet Version (Ipad Pro) */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Features content */
+    .features .col-md-6 {
+        margin-top: 20vh;
+    }
+
+    .features h3 {
+        font-size: 3vw;
+    }
+
+    .features h1 {
+        font-size: 7vw;
+    }
+
+    .features h2 {
+        font-size: 3vw;
+    }
+
+    .features p {
+        font-size: 2vw;
+    }
+}
