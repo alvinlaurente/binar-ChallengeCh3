@@ -34,7 +34,7 @@ body, html {
 
 .navbar a:hover {
     transition: all 0.8 ease 0s; /* Hover on transtion */
-    color: gold !important;
+    color: orange !important;
 }
 
 /* Jumbotron */
@@ -78,8 +78,6 @@ body, html {
     font-weight: 600;
     text-transform: uppercase;
     border-radius: 5px;
-    background-color: gold;
-    border-color: gold;
 }
 
 .playnow .to-gameoption {
@@ -163,11 +161,32 @@ body, html {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/features.jpg);
 }
 
-.features .col-lg-5 {
+.features .col-md-6 {
     text-align: left;
+    margin-top: 30vh;
 }
 
-/* Stepper */
+.features h3 {
+    font-size: 3.5vw;
+}
+
+.features h1 {
+    font-size: 9vw;
+    text-transform: uppercase;
+}
+
+.features h2 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.features p {
+    font-size: 3.5vw;
+}
+
+/* Vertical Stepper */
 .step {
     padding: 10px;
     display: flex;
@@ -179,9 +198,7 @@ body, html {
 .v-stepper {
     position: relative; /* Visible */
 }
-  
-  
-/* Regular step */
+
 .step .circle {
     background-color: white;
     border: 3px solid gray;
@@ -238,4 +255,29 @@ body, html {
 /* System Requirements content */
 .sysreq {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%), url(assets/requirements.png);
+    padding: 10vh 0px;
+}
+
+.sysreq h5 {
+    font-size: 2.5vw;
+}
+
+.sysreq h1 {
+    font-size: 7vw;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 5vh;
+}
+
+.sysreq h2 {
+    color: orange;
+    font-size: 4vw;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sysreq p {
+    color: white;
+    font-size: 4vw;
+    text-align: left;
 }
