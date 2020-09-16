@@ -16,6 +16,10 @@
     }
 
     /* Jumbotron Play Now content */
+    /* .playnow {
+        margin-top: -9vh;
+    } */
+
     .playnow .container .display-1 {
         font-size: 10vh;
     }
@@ -64,18 +68,54 @@
 
     /* System Requirements content */
     .sysreq h5{
-        font-size: 1.5vw;
+        font-size: 1em;
     }
 
     .sysreq h1 {
-        font-size: 4vw;
+        font-size: 3em;
     }
 
     .sysreq h2 {
-        font-size: 1.5vw;
+        font-size: 1.25em;
     }
 
     .sysreq p {
-        font-size: 1.3vw;
+        font-size: 1em;
+    }
+
+    /* System Requirements content */
+    .sysreq h5{
+        font-size: 1em;
+    }
+
+    .sysreq h1 {
+        font-size: 2em;
+    }
+
+    .sysreq h2 {
+        font-size: 1.25em;
+    }
+
+    .sysreq p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    /* System Requirements content */
+    .sysreq h5{
+        font-size: 1em;
+    }
+
+    .sysreq h1 {
+        font-size: 2em;
+    }
+
+    .sysreq h2 {
+        font-size: 1.5em;
+    }
+
+    .sysreq p {
+        font-size: .75em;
     }
 }
