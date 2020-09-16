@@ -143,7 +143,7 @@ body, html {
     background-color: rgba(0,0,0,0);
     border-radius: 50%;
     box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,1);
-  }
+}
 
 .gameoption .carousel-indicators .active {
     background-color: rgba(255,255,255,1) !important;
@@ -294,4 +294,54 @@ body, html {
 /* Top Scores content */
 .topscores {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%), url(assets/top-score-bg.png);
+}
+
+.topscores .container {
+    position: relative;
+}
+
+.topscores .topscoresleft {
+    position: absolute;
+    top: 200px;
+    width: 350px;
+    text-align: left;
+}
+
+.topscores .topscoresleft h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.topscores .topscoresleft h2 {
+    font-size: 16px;
+}
+
+.topscores .topscoresleft a {
+    margin-top: 5vh;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+.topscores .twittercards .card-header{
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: none;
+}
+
+.topscores .twittercards img {
+    width: 10px;
+    height: 10px;
+}
+
+.topscores .twittercards .card-body{
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.topscores .twittercards h5 {
+    font-size: 12px;
+}
+
+.topscores .twittercards p {
+    font-size: 10px;
+    color: grey;
 }
