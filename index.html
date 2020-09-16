@@ -3,9 +3,8 @@
 	<head>
 		<!-- Meta tags -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Alvin Laurent Ertanto">
 		<meta name="keywords" content="game, traditional game, dx11, play">
 		<meta name="description" content="Experience new traditional gameplay! We provide various nostalgic traditional games here for everyone who miss their childhood. Play now for free and enjoy.">
@@ -16,9 +15,11 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="desktop_style.css">
+		<link rel="stylesheet" href="tablet_style.css">
+		<link rel="stylesheet" href="smphone_style.css">
 
 		<!-- Font -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap">
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -31,7 +32,7 @@
 
 	<body>
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light position-absolute w-100">
 			<div class="container mr-auto">
 				<a class="navbar-brand mr-5" href="#">Logo</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,8 +90,8 @@
 
 		<!-- Game Option content -->
 		<div class="jumbotron jumbotron-fluid gameoption" id="gameoptioncontent">
-			<div class="container h-100">
-				<div class="row">
+			<div class="container">
+				<div class="row mx-auto">
 					<div class="col-lg-4">
 						<h3>What's so special?</h3>
 						<h1>The games</h1>
@@ -162,7 +163,6 @@
 								<p>If you miss your childhood, we provide many traditional games here</p>
 							</div>
 						</div>
-						
 						<div class="step active">
 							<div class="v-stepper">
 								<div class="circle"></div>
@@ -204,16 +204,11 @@
 								<tr>
 									<td>
 										<h2>OS:</h2>
-										<p>
-											Windows 7 64-bit only<br>
-											(No OSX support at this time)
-										</p>
+										<p>Windows 7 64-bit only<br>(No OSX support at this time)</p>
 									</td>
 									<td>
 										<h2>Processor:</h2>
-										<p>
-											Intel Core 2 Duo @2.4GHz or AMD Athlon X2 @ 2.8GHz
-										</p>
+										<p>Intel Core 2 Duo @2.4GHz or AMD Athlon X2 @ 2.8GHz</p>
 									</td>
 								</tr>
 								<tr>
@@ -229,9 +224,7 @@
 								<tr>
 									<td colspan="2">
 										<h2>Graphics:</h2>
-										<p>NVIDIA GeForce GTX 660 2GB or<br>
-											AMD Radeon HD 7850 2GB DirectX11 (Shader Model S)
-										</p>
+										<p>NVIDIA GeForce GTX 660 2GB or<br>AMD Radeon HD 7850 2GB DirectX11 (Shader Model S)</p>
 									</td>
 								</tr>
 							</tbody>
@@ -243,5 +236,49 @@
 			</div>
 		</div>
 		<!-- End of System Requirements content-->
+
+		<div class="container-fluid separator"></div>
+
+		<!-- Top Scores content -->
+		<div class="jumbotron jumbotron-fluid topscores" id="topscorescontent">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1>Top Scores</h1>
+						<h3>This top score from various games provided on this platform</h3>
+						<a href="#" class="btn btn-warning">see more</a>
+					</div>
+					<div class="col-lg-6">
+
+						<!-- Twitter cards -->
+						<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Dark card title</h5>
+								<p class="card-text">S
+									ome quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+						<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Dark card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+						<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+							<div class="card-header">Header</div>
+							<div class="card-body">
+								<h5 class="card-title">Dark card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+						<!-- End of Twitter cards -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Top Scores content -->
 	</body>
 </html>
