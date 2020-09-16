@@ -68,14 +68,14 @@ body, html {
 
 .playnow .container .display-1 {
     margin-top: 25vh;
-    font-size: 5.5vh;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .playnow .container .display-2 {
-    font-size: 2.5vh;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -83,8 +83,8 @@ body, html {
 .playnow .container a {
     margin-top: 4vh;
     padding: 10px 50px 10px 50px;
-    font-size: 2.5vh;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -99,7 +99,7 @@ body, html {
 
 .playnow .to-gameoption .display-3 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 2vh;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -117,16 +117,15 @@ body, html {
 
 .gameoption .container {
     text-align: left;
-    /*padding: 15vh;*/
 }
 
 .gameoption h3 {
-    font-size: 2.5vh;
+    font-size: 16px;
     letter-spacing: 2px;
 }
 
 .gameoption h1 {
-    font-size: 10vw;
+    font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -169,27 +168,27 @@ body, html {
 
 .features .col-md-6 {
     text-align: left;
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 
 .features h3 {
-    font-size: 3.5vw;
+    font-size: 12px;
 }
 
 .features h1 {
-    font-size: 9vw;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
 .features h2 {
-    font-size: 3.5vw;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     color: #ffc107;
 }
 
 .features p {
-    font-size: 3.5vw;
+    font-size: 16px;
 }
 
 /* Vertical Stepper */
@@ -264,7 +263,7 @@ body, html {
 }
 
 .sysreq h5 {
-    font-size: 2.5vw;
+    font-size: 12px;
 }
 
 .sysreq table {
@@ -272,7 +271,7 @@ body, html {
 }
 
 .sysreq h1 {
-    font-size: 7vw;
+    font-size: 24px;
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 5vh;
@@ -280,14 +279,14 @@ body, html {
 
 .sysreq h2 {
     color: orange;
-    font-size: 3vw;
+    font-size: 18px;
     text-align: left;
     text-transform: uppercase;
 }
 
 .sysreq p {
     color: white;
-    font-size: 3vw;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -296,15 +295,8 @@ body, html {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%), url(assets/top-score-bg.png);
 }
 
-.topscores .container {
-    position: relative;
-}
-
 .topscores .topscoresleft {
-    position: absolute;
-    top: 200px;
-    width: 350px;
-    text-align: left;
+    margin-bottom: 2vh;
 }
 
 .topscores .topscoresleft h1 {
@@ -322,14 +314,43 @@ body, html {
     font-weight: bold;
     padding: 10px 50px;
 }
-.topscores .twittercards .card-header{
+
+/* Twitter Cards */
+.topscores .twittercards .card-header {
     background-color: rgba(0,0,0,0.5);
     border-bottom: none;
+    text-align: left;
+    position: relative;
+    padding-bottom: 0;
 }
 
-.topscores .twittercards img {
-    width: 10px;
-    height: 10px;
+.topscores .twittercards .card-header .profilepic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 2px #ffc107;
+}
+
+.topscores .twittercards .card-header h3 {
+    font-size: 12px;
+    color: #ffc107;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+.topscores .twittercards .card-header h4 {
+    font-size: 10px;
+    color: grey;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+.topscores .twittercards .card-header .twitterlogo{
+    position: absolute; /* Relative to .cardheader */
+    right: 15px;
+    top: 15px;
 }
 
 .topscores .twittercards .card-body{
@@ -338,7 +359,7 @@ body, html {
 }
 
 .topscores .twittercards h5 {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .topscores .twittercards p {

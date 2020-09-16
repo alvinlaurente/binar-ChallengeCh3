@@ -95,4 +95,16 @@
     .sysreq p {
         font-size: 1em;
     }
+
+    /* Top Scores content */
+    .topscores .container {
+        position: relative;
+    }
+    
+    .topscores .topscoresleft {
+        position: absolute; /* Relative to .container */
+        top: 150px;
+        width: 350px;
+        text-align: left;
+    }
 }
