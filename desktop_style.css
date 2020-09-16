@@ -1,4 +1,5 @@
 /* Desktop Version */
+
 @media (min-width: 992px) {
     
     /* Navbar */
@@ -33,6 +34,15 @@
 
     .playnow .to-gameoption .display-3 {
         font-size: 2vh;
+    }
+    
+    /* Game Option content */
+    .gameoption h1 {
+        font-size: 4vw;
+    }
+
+    .gameoption .col-lg-8 {
+        padding-top: 5vh; /* Align Carousel image with 'The games' */
     }
 
     /* Features content */
@@ -70,33 +80,7 @@
     }
 
     .sysreq p {
-        font-size: 1em;
-    }
-}
-
-
-/* Tablet Version (Ipad Pro) */
-
-@media (min-width: 768px) and (max-width: 992px) {
-    /* Features content */
-    .features .col-md-6 {
-        margin-top: 20vh;
-    }
-
-    .features h3 {
-        font-size: 3vw;
-    }
-
-    .features h1 {
-        font-size: 7vw;
-    }
-
-    .features h2 {
-        font-size: 3vw;
-    }
-
-    .features p {
-        font-size: 2vw;
+        font-size: 1.3vw;
     }
 
     /* System Requirements content */

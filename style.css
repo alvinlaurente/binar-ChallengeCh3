@@ -2,12 +2,15 @@
 body, html {
     color: white;
     scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
     background-color: rgba(52,58,64) !important;
 }
@@ -63,23 +66,27 @@ body, html {
     margin-top: 25vh;
     font-size: 5.5vh;
     font-weight: 600;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .playnow .container .display-2 {
     font-size: 2.5vh;
-    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+/* Play Now button */
 .playnow .container a {
     margin-top: 4vh;
     padding: 10px 50px 10px 50px;
     font-size: 2.5vh;
     font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 5px;
 }
 
+/* Play Now anchor link to Game Option content */
 .playnow .to-gameoption {
     position: absolute;
     bottom: 5vh;
@@ -87,9 +94,12 @@ body, html {
 }
 
 .playnow .to-gameoption .display-3 {
+    font-family: 'Bebas Neue', cursive;
     font-size: 2vh;
     font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 .playnow .to-gameoption a {
@@ -107,12 +117,12 @@ body, html {
 }
 
 .gameoption h3 {
-    font-size: 2vh;
+    font-size: 2.5vh;
     letter-spacing: 2px;
 }
 
 .gameoption h1 {
-    font-size: 4vw;
+    font-size: 10vw;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -121,10 +131,6 @@ body, html {
     padding-left: 0px;
     padding-right: 0px;
 } */
-
-.gameoption .col-lg-8 {
-    padding-top: 5vh; /* Align Carousel image with 'The games' */
-}
 
 /* Carousel Game Option */
 .gameoption .carousel-inner img {
@@ -159,11 +165,12 @@ body, html {
 /* Features content */
 .features {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/features.jpg);
+    background-position: left;
 }
 
 .features .col-md-6 {
     text-align: left;
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 .features h3 {
@@ -192,7 +199,6 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: cream;
 }
   
 .v-stepper {
@@ -206,15 +212,15 @@ body, html {
     width: 20px;    /* +6 for border */
     height: 20px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .step .line {
-    top: 30px;
+    top: 20px;
     left: 8px;
     height: 100%;
     position: absolute;
-    border-left: 3px solid gray;
+    border-left: 3px solid white;
 }
 
 .step.completed .circle {
@@ -271,13 +277,18 @@ body, html {
 
 .sysreq h2 {
     color: orange;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: left;
     text-transform: uppercase;
 }
 
 .sysreq p {
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: left;
+}
+
+/* Top Scores content */
+.topscores {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%), url(assets/top-score-bg.png);
 }
