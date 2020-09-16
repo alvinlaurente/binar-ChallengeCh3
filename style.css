@@ -110,6 +110,42 @@ body, html {
     color: white;
 }
 
+.playnow .to-gameoption .icon {
+    width: 50px;
+    margin: auto;
+}
+
+.playnow .to-gameoption .icon path {
+    fill: transparent;
+    stroke-width: .5;
+    stroke: white;
+}
+
+.playnow .to-gameoption .icon.caretdown path {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 0;
+}
+
+.playnow .to-gameoption .icon.caretdown:hover path {
+    animation: caretdown 1s linear forwards;
+}
+
+@keyframes caretdown {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    
+    50% {
+        stroke-dashoffset: 40;
+    }
+
+    100% {
+        stroke-dashoffset: 80;
+        stroke: #ffc107;
+        fill: #ffc107;
+    }
+}
+
 /* Game Option content */
 .gameoption {
     background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%), url(assets/the-games-bg.jpg);
@@ -316,6 +352,10 @@ body, html {
 }
 
 /* Twitter Cards */
+.topscores .twittercards .card {
+    border: none;
+}
+
 .topscores .twittercards .card-header {
     background-color: rgba(0,0,0,0.5);
     border-bottom: none;
