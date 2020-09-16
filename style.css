@@ -1,3 +1,5 @@
+/* Default mobile phone version (width <576px) */
+
 /* Global Style */
 body, html {
     color: white;
@@ -6,38 +8,40 @@ body, html {
 }
 
 /* Navbar */
-.navbar {
+.customnavbar {
     font-family: 'Bebas Neue', cursive;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background-color: rgba(52,58,64) !important;
+    background-color: #ffc107;
+    position: fixed !important;
+    z-index: 1;
 }
 
-.navbar-light .navbar-toggler-icon {
+.customnavbar .navbar-light .navbar-toggler-icon {
     background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
 }
 
-.navbar-light .navbar-toggler {
+.customnavbar .navbar-light .navbar-toggler {
     color: rgba(255,255,255,.5);
     border-color: rgba(255,255,255,.1);
 }
 
-.navbar .nav-link {
+.customnavbar .nav-link {
     margin: 0px 1vw 0px 1vw;
 }
 
-.navbar a {
+.customnavbar a {
     text-decoration: none;
     color: rgb(255,255,255) !important;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
     transition: all 0.8s ease 0s; /* Hover off transition */
 }
 
-.navbar a:hover {
+.customnavbar a:hover {
     transition: all 0.8 ease 0s; /* Hover on transtion */
-    color: orange !important;
+    color: #ffc107 !important;
 }
 
 /* Jumbotron */
@@ -127,11 +131,6 @@ body, html {
     text-transform: uppercase;
 }
 
-/* .gameoption .col-lg-4, .gameoption .col-lg-8 {
-    padding-left: 0px;
-    padding-right: 0px;
-} */
-
 /* Carousel Game Option */
 .gameoption .carousel-inner img {
     margin: auto;
@@ -164,7 +163,7 @@ body, html {
 
 /* Features content */
 .features {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/features.jpg);
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/features.jpg);
     background-position: left;
 }
 
@@ -186,7 +185,7 @@ body, html {
     font-size: 3.5vw;
     font-weight: 600;
     text-transform: uppercase;
-    color: orange;
+    color: #ffc107;
 }
 
 .features p {
@@ -260,7 +259,7 @@ body, html {
 
 /* System Requirements content */
 .sysreq {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 40%, rgba(0,0,0,1) 100%), url(assets/requirements.png);
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/requirements.png);
     padding: 10vh 0px;
 }
 

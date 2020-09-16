@@ -3,15 +3,15 @@
 @media (min-width: 992px) {
     
     /* Navbar */
-    .navbar {
+    .customnavbar {
         background-color: rgba(0,0,0,0.3) !important; /* Transparent navbar on Desktop */
     }
 
-    .navbar .navbar-center {
+    .customnavbar .navbar-center {
         margin-left: 20px;
     }
 
-    .navbar a:hover {
+    .customnavbar a:hover {
         background: rgba(0,0,0,0.3); /* Add background transparent transition */
     }
 
