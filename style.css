@@ -420,3 +420,8 @@ body, html {
 .footer-line{
     border-top: .5px solid var(--gray);
 }
+
+.vertical-links > li {
+    display: inline-block;
+    list-style: none;
+}
