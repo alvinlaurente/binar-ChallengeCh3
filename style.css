@@ -406,3 +406,17 @@ body, html {
     font-size: 10px;
     color: grey;
 }
+
+/* Newsletter content */
+.newsletter{
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%), url(assets/newsletter-bg.jpg);
+}
+
+/* footer */
+.footer{
+    background-color: rgba(0,0,0,1);
+}
+
+.footer-line{
+    border-top: .5px solid var(--gray);
+}
