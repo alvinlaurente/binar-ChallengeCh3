@@ -378,6 +378,7 @@ body, html {
     letter-spacing: 2px;
     margin-left: 50px;
     margin-bottom: 0;
+    margin-top: 3px;
 }
 
 .topscores .twittercards .card-header h4 {
@@ -389,8 +390,8 @@ body, html {
 
 .topscores .twittercards .card-header .twitterlogo{
     position: absolute; /* Relative to .cardheader */
-    right: 15px;
-    top: 15px;
+    right: 16px;
+    top: 16px;
 }
 
 .topscores .twittercards .card-body{
@@ -399,10 +400,109 @@ body, html {
 }
 
 .topscores .twittercards h5 {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .topscores .twittercards p {
     font-size: 10px;
     color: grey;
+}
+
+/* Newsletter content */
+.newsletter {
+    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%), url(assets/newsletter-bg.jpg);
+    text-align: left;
+}
+
+.newsletter h3 {
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.newsletter h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.newsletter p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* Newsletter Form */
+.newsletter form {
+    position: relative;
+}
+
+.newsletter form input[type="text"] {
+    border: 1px solid grey;
+    font-size: 20px;
+    color: #ffc107;
+}
+
+/* Placeholder input color */
+::-webkit-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::-moz-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::-ms-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::placeholder {
+    color: #ffc107 !important;
+}
+
+.newsletter form p {
+    color: grey;
+    position: absolute; /* Relative to form */
+    font-size: 10px;
+    left: 12px;
+    top: 1px;
+}
+
+.newsletter form button {
+    padding: 9px;
+}
+
+/* Navigation Bar */
+.navigation {
+    background-color: black;
+    height: 30vh;
+}
+.navigation a {
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 0px 20px;
+}
+
+.navigation .logo {
+    width: 100% !important;
+    text-align: right;
+}
+
+.navigation hr {
+    border-top: 1px solid grey;
+}
+
+/* Footer */
+.footer p {
+    font-size: 14px;
+    color: grey;
+}
+
+.footer .col-lg-6 {
+    text-align: right;
+}
+
+.footer a {
+    margin: 0;
 }
