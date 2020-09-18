@@ -114,12 +114,16 @@
     }
 
     /* Navigation */
-    .navigation {
+    /* .navigation {
         height: 15vh;
-    }
+    } */
 
     /* Footer */
     .footer .col-lg-6 {
         text-align: right;
+    }
+
+    .footer .col-lg-4 {
+        text-align: left;
     }
 }
