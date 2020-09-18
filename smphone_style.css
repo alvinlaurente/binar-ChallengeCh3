@@ -1,0 +1,25 @@
+/* Small Phones - small devices Version */
+
+@media (min-width: 576px) and (max-width: 768px) {
+  /* System Requirements content */
+  .sysreq h5 {
+    font-size: 1em;
+  }
+
+  .sysreq h1 {
+    font-size: 2em;
+  }
+
+  .sysreq h2 {
+    font-size: 1.5em;
+  }
+
+  .sysreq p {
+    font-size: 0.75em;
+  }
+
+  /* Navigation */
+  .navigation {
+    height: 30vh;
+  }
+}

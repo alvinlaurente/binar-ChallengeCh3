@@ -1,101 +1,133 @@
 /* Desktop Version */
+
 @media (min-width: 992px) {
-    
-    /* Navbar */
-    .navbar {
-        background-color: rgba(0,0,0,0.3) !important; /* Transparent navbar on Desktop */
-    }
+  /* Navbar */
+  .customnavbar {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.3
+    ) !important; /* Transparent navbar on Desktop */
+  }
 
-    .navbar .navbar-center {
-        margin-left: 20px;
-    }
+  .customnavbar .navbar-center {
+    margin-left: 20px;
+  }
 
-    .navbar a:hover {
-        background: rgba(0,0,0,0.3); /* Add background transparent transition */
-    }
+  .customnavbar a:hover {
+    background: rgba(0, 0, 0, 0.3); /* Add background transparent transition */
+  }
 
-    /* Jumbotron Play Now content */
-    .playnow {
-        margin-top: -9vh;
-    }
+  /* Jumbotron Play Now content */
+  .playnow .container h1 {
+    font-size: 10vh;
+  }
 
-    .playnow .container .display-1 {
-        font-size: 10vh;
-    }
+  .playnow .container h2 {
+    font-size: 3vh;
+  }
 
-    .playnow .container .display-2 {
-        font-size: 3vh;
-    }
+  .playnow .container a {
+    font-size: 2vh;
+  }
 
-    .playnow .container a {
-        font-size: 2vh;
-    }
+  .playnow .to-gameoption h3 {
+    font-size: 2vh;
+  }
 
-    .playnow .to-gameoption .display-3 {
-        font-size: 2vh;
-    }
+  /* Game Option content */
+  .gameoption h1 {
+    font-size: 4vw;
+  }
 
-    /* Features content */
-    .features .col-md-6 {
-        margin-top: 10vh;
-    }
+  .gameoption .col-lg-8 {
+    padding-top: 5vh; /* Align Carousel image with 'The games' */
+  }
 
-    .features h3 {
-        font-size: 2vw;
-    }
+  /* Features content */
+  .features .col-md-6 {
+    margin-top: 10vh;
+  }
 
-    .features h1 {
-        font-size: 6.5vw;
-    }
+  .features h3 {
+    font-size: 2vw;
+  }
 
-    .features h2 {
-        font-size: 2vw;
-    }
+  .features h1 {
+    font-size: 6.5vw;
+  }
 
-    .features p {
-        font-size: 1.5vw;
-    }
+  .features h2 {
+    font-size: 2vw;
+  }
 
-    /* System Requirements content */
-    .sysreq h5{
-        font-size: 1.5vw;
-    }
+  .features p {
+    font-size: 1.5vw;
+  }
 
-    .sysreq h1 {
-        font-size: 4vw;
-    }
+  /* System Requirements content */
+  .sysreq h5 {
+    font-size: 1em;
+  }
 
-    .sysreq h2 {
-        font-size: 1.5vw;
-    }
+  .sysreq h1 {
+    font-size: 6em;
+  }
 
-    .sysreq p {
-        font-size: 1vw;
-    }
-}
+  .sysreq h2 {
+    font-size: 1.25em;
+  }
 
+  .sysreq p {
+    font-size: 1em;
+  }
 
-/* Tablet Version (Ipad Pro) */
+  /* System Requirements content */
+  .sysreq h5 {
+    font-size: 1em;
+  }
 
-@media (min-width: 768px) and (max-width: 992px) {
-    /* Features content */
-    .features .col-md-6 {
-        margin-top: 20vh;
-    }
+  .sysreq h1 {
+    font-size: 3em;
+  }
 
-    .features h3 {
-        font-size: 3vw;
-    }
+  .sysreq h2 {
+    font-size: 1.25em;
+  }
 
-    .features h1 {
-        font-size: 7vw;
-    }
+  .sysreq p {
+    font-size: 1em;
+  }
 
-    .features h2 {
-        font-size: 3vw;
-    }
+  /* Top Scores content */
+  .topscores .container {
+    position: relative;
+  }
 
-    .features p {
-        font-size: 2vw;
-    }
+  .topscores .topscoresleft {
+    position: absolute; /* Relative to .container */
+    top: 150px;
+    width: 350px;
+    text-align: left;
+  }
+
+  /* Newsletter content */
+  .newsletter h1 {
+    font-size: 44px;
+  }
+
+  /* Navigation */
+  .navigation {
+    height: 20vh;
+  }
+
+  /* Footer */
+  .footer .col-lg-6 {
+    text-align: right !important;
+  }
+
+  .footer .col-lg-4 {
+    text-align: left;
+  }
 }

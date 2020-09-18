@@ -1,0 +1,50 @@
+/* Tablet Version (Ipad Pro) */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Features content */
+  .features {
+    background-position: center;
+  }
+
+  .features .col-md-6 {
+    margin-top: 20vh;
+  }
+
+  .features h3 {
+    font-size: 3vw;
+  }
+
+  .features h1 {
+    font-size: 7vw;
+  }
+
+  .features h2 {
+    font-size: 3vw;
+  }
+
+  .features p {
+    font-size: 2vw;
+  }
+
+  /* System Requirements content */
+  .sysreq h5 {
+    font-size: 2vw;
+  }
+
+  .sysreq h1 {
+    font-size: 5vw;
+  }
+
+  .sysreq h2 {
+    font-size: 2.5vw;
+  }
+
+  .sysreq p {
+    font-size: 1.5vw;
+  }
+
+  /* Navigation */
+  .navigation {
+    height: 30vh;
+  }
+}
