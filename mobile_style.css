@@ -1,7 +1,8 @@
 /* Default mobile phone version (width <576px) */
 /* Common variables used */
 /* Global Style */
-body, html {
+body,
+html {
   color: white;
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
@@ -114,7 +115,7 @@ body, html {
 
 .playnow .to-gameoption .icon path {
   fill: transparent;
-  stroke-width: .5;
+  stroke-width: 0.5;
   stroke: white;
 }
 
@@ -195,7 +196,8 @@ body, html {
   background-color: white !important;
 }
 
-.gameoption .carousel .carousel-control-prev, .gameoption .carousel .carousel-control-next {
+.gameoption .carousel .carousel-control-prev,
+.gameoption .carousel .carousel-control-next {
   opacity: 1;
 }
 
@@ -471,7 +473,7 @@ body, html {
   position: absolute;
   /* Relative to form */
   font-size: 10px;
-  left: 12px;
+  left: 16px;
   top: 1px;
 }
 
@@ -498,7 +500,7 @@ body, html {
 /* Navigation */
 .navigation {
   background-color: black;
-  /*height: 35vh;*/
+  height: 40vh;
   padding: 0;
   /* Footer */
 }
