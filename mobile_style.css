@@ -498,7 +498,7 @@ body, html {
 /* Navigation */
 .navigation {
   background-color: black;
-  height: 35vh;
+  /*height: 35vh;*/
   padding: 0;
   /* Footer */
 }
