@@ -1,0 +1,105 @@
+/* Default mobile phone version (width <576px) */
+
+/* Common variables used */
+$primary-color: white;
+$secondary-color: #ffc107;
+$tertiary-color: grey;
+$quarternary-color: black;
+$transparent-color: transparent;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Bebas Neue', cursive;
+$hovertransition: all 0.8s ease 0s;
+
+/* Global Style */
+*, body, html {
+    color: $primary-color;
+    scroll-behavior: smooth;
+    font-family: $primary-font;
+    text-decoration: none;
+}
+
+/* Navbar */
+.customnavbar {
+    font-family: $secondary-font;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: fixed !important;
+    z-index: 1;
+
+    .navbar-light {
+		.navbar-toggler-icon {
+			background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+        }
+
+        .navbar-toggler {
+            color: rgba(255,255,255,.5);
+            border-color: rgba(255,255,255,.1);
+        }
+    }
+
+    .nav-link {
+        margin: 0px 1vw 0px 1vw;
+    }
+
+    a {
+        color: $primary-color !important;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+        transition: $hovertransition; /* Hover off transition */
+
+        &:hover {
+            transition: $hovertransition;
+            color: $secondary-color !important;
+        }
+    }
+}
+
+/* Jumbotron */
+.jumbotron {
+    /* Multiple background with no-repeat */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+/* Separator - separate between backgrounds */
+.separator {
+    height: 5vh;
+    background-color: $quarternary-color;
+}
+
+/* Play Now content */
+.playnow {
+    background-image: linear-gradient(to bottom, $transparent-color 70%, $quarternary-color 100%), url(assets/main-bg.jpg);
+
+    .container {
+        .display-1 {
+            margin-top: 25vh;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .display-2 {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        /* Play Now button */
+        a {
+            margin-top: 4vh;
+            padding: 10px 50px 10px 50px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+    }
+}
+
