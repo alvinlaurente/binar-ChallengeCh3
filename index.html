@@ -36,16 +36,16 @@
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav mr-auto navbar-center">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#playnowcontent">Home<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Work</a>
+							<a class="nav-link" href="#featurescontent">Work</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#newslettercontent">Contact</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Me</a>
+							<a class="nav-link" href="#navigation">About Me</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav">
@@ -62,7 +62,7 @@
 		<!-- End of navbar -->
 
 		<!-- Play Now content -->
-		<div class="jumbotron jumbotron-fluid playnow">
+		<div class="jumbotron jumbotron-fluid playnow" id="playnowcontent">
 			<div class="container">
 				<h1 class="display-1">Play traditional game</h1>
 				<h2 class="display-2">Experience new traditional game play</h2>
@@ -247,7 +247,7 @@
 
 				<!-- Twitter cards -->
 				<div class="row">
-					<div class="col-lg-4 offset-lg-8 twittercards">
+					<div class="col-lg-4 col-md-6 col-sm-8 offset-lg-8 offset-md-3 offset-sm-2 twittercards">
 						<div class="card text-white bg-dark mb-2">
 							<div class="card-header">
 								<img src="assets/evan-lahti.jpg" class="img-fluid float-left profilepic" alt="Evan Lahti">
@@ -264,7 +264,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-4 offset-lg-6 twittercards">
+					<div class="col-lg-4 col-md-6 col-sm-8 offset-lg-6 offset-md-3 offset-sm-2 twittercards">
 						<div class="card text-white bg-dark mb-2">
 							<div class="card-header">
 								<img src="assets/jada-griffin.jpg" class="img-fluid float-left profilepic" alt="Jada Griffin">
@@ -281,7 +281,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-lg-4 offset-lg-7 twittercards">
+					<div class="col-lg-4 col-md-6 col-sm-8 offset-lg-7 offset-md-3 offset-sm-2 twittercards">
 						<div class="card text-white bg-dark mb-1">
 							<div class="card-header">
 								<img src="assets/aaron-williams.jpg" class="img-fluid float-left profilepic" alt="Aaron Williams">
@@ -333,22 +333,45 @@
 		</div>
 		<!-- End of Newsletter content -->
 
-		<footer class="py-4 text-white-50 footer" id="footercontent">
+		<!-- Navigation -->
+		<div class="jumbotron jumbotron-fluid navigation" id="navigation">
 			<div class="container">
-				<div class="row py-2 footer-line">
-					<div class="col-md-6 pl-0 text-left">
-						<p class="small">&copy; 2018 Your Games, Inc. All Right Reserved</p>
+				<div class="row">
+					<div class="col-lg-8">
+						<a href="#playnowcontent"><span>Main</span></a>
+						<a href="#gameoptioncontent"><span>About</span></a>
+						<a href="#featurescontent"><span>Game Features</span></a>
+						<a href="#sysreqcontent"><span>System Requirements</span></a>
+						<a href="#topscorescontent"><span>Quotes</span></a>
 					</div>
-					<div class="col-md-6 text-right pr-0">
-						<ul class="vertical-links small">
-							<li class="border-right border-secondary pr-1">PRIVACY POLICY</li>
-							<li class="border-right border-secondary pr-1">TERMS OF SERVICES</li>
-							<li>CODE OF CONDUCT</li>
-						</ul>
+					<div class="col-lg-4 socialmedialogo">
+						<a href="https://facebook.com/"><img src="assets/facebook.svg"></a>
+						<a href="https://twitter.com/"><img src="assets/twitter.svg"></a>
+						<a href="https://youtube.com/"><img src="assets/Vector.svg"></a>
+						<a href="https://twitch.tv/"><img src="assets/twitch.svg"></a>
 					</div>
 				</div>
+				<hr>
+
+				<!-- Footer -->
+				<div class="row content-justify-end footer">
+					<div class="col-lg-4">
+						<div class="d-inline"><p>&copy 2018 Your Games, inc. All Rights Reserved</p></div>
+					</div>
+					<div class="col-lg-6 offset-lg-2">
+						<div class="d-inline">
+							<a href="#"><span>Privacy Policy </span></a>|
+							<a href="#"><span>Terms of Services </span></a>|
+							<a href="#"><span>Code of Conduct</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- End of Footer -->
+
 			</div>
-		  </footer>
+		</div>
+		<!-- End of Navigation -->
+
 	</body>
 
 	<!-- Optional JavaScript -->

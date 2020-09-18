@@ -1,0 +1,98 @@
+/* Default mobile phone version (width <576px) */
+/* Common variables used */
+/* Global Style */
+*, body, html {
+  color: white;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+/* Navbar */
+.customnavbar {
+  font-family: "Bebas Neue", cursive;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: fixed !important;
+  z-index: 1;
+}
+
+.customnavbar .navbar-light .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+}
+
+.customnavbar .navbar-light .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.customnavbar .nav-link {
+  margin: 0px 1vw 0px 1vw;
+}
+
+.customnavbar a {
+  color: white !important;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  /* Hover off transition */
+}
+
+.customnavbar a:hover {
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  color: #ffc107 !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+  /* Multiple background with no-repeat */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+/* Separator - separate between backgrounds */
+.separator {
+  height: 5vh;
+  background-color: black;
+}
+
+/* Play Now content */
+.playnow {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), to(black)), url(assets/main-bg.jpg);
+  background-image: linear-gradient(to bottom, transparent 70%, black 100%), url(assets/main-bg.jpg);
+}
+
+.playnow .container {
+  /* Play Now button */
+}
+
+.playnow .container .display-1 {
+  margin-top: 25vh;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.playnow .container .display-2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.playnow .container a {
+  margin-top: 4vh;
+  padding: 10px 50px 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=mobile_style.css.map */

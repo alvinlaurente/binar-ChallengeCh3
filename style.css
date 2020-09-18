@@ -5,6 +5,7 @@ body, html {
     color: white;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
 
 /* Navbar */
@@ -14,7 +15,6 @@ body, html {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    background-color: #ffc107;
     position: fixed !important;
     z-index: 1;
 }
@@ -33,8 +33,7 @@ body, html {
 }
 
 .customnavbar a {
-    text-decoration: none;
-    color: rgb(255,255,255) !important;
+    color: white !important;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
     transition: all 0.8s ease 0s; /* Hover off transition */
 }
@@ -63,20 +62,20 @@ body, html {
 
 /* Play Now content */
 .playnow {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%), url(assets/main-bg.jpg);
+    background-image: linear-gradient(to bottom, transparent 70%, black 100%), url(assets/main-bg.jpg);
 }
 
 .playnow .container .display-1 {
     margin-top: 25vh;
     font-size: 32px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .playnow .container .display-2 {
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 /* Play Now button */
@@ -85,7 +84,7 @@ body, html {
     padding: 10px 50px 10px 50px;
     font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 5px;
 }
@@ -100,14 +99,9 @@ body, html {
 .playnow .to-gameoption .display-3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 0px;
-}
-
-.playnow .to-gameoption a {
-    color: white;
 }
 
 .playnow .to-gameoption .icon {
@@ -142,13 +136,13 @@ body, html {
     100% {
         stroke-dashoffset: 80;
         stroke: #ffc107;
-        fill: #ffc107;
+        fill: transparent;
     }
 }
 
 /* Game Option content */
 .gameoption {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%), url(assets/the-games-bg.jpg);
+    background-image: linear-gradient(black 0%, transparent 10%, transparent 90%, black 100%), url(assets/the-games-bg.jpg);
 }
 
 .gameoption .container {
@@ -181,7 +175,7 @@ body, html {
 }
 
 .gameoption .carousel-indicators .active {
-    background-color: rgba(255,255,255,1) !important;
+    background-color: white !important;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -198,7 +192,7 @@ body, html {
 
 /* Features content */
 .features {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/features.jpg);
+    background-image: linear-gradient(black 0%, transparent 50%, black 100%), url(assets/features.jpg);
     background-position: left;
 }
 
@@ -241,7 +235,7 @@ body, html {
 
 .step .circle {
     background-color: white;
-    border: 3px solid gray;
+    border: 3px solid grey;
     border-radius: 100%;
     width: 20px;    /* +6 for border */
     height: 20px;
@@ -294,7 +288,7 @@ body, html {
 
 /* System Requirements content */
 .sysreq {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url(assets/requirements.png);
+    background-image: linear-gradient(black 0%, transparent 50%, black 100%), url(assets/requirements.png);
     padding: 10vh 0px;
 }
 
@@ -314,7 +308,7 @@ body, html {
 }
 
 .sysreq h2 {
-    color: orange;
+    color: #ffc107;
     font-size: 18px;
     text-align: left;
     text-transform: uppercase;
@@ -328,7 +322,7 @@ body, html {
 
 /* Top Scores content */
 .topscores {
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%), url(assets/top-score-bg.png);
+    background-image: linear-gradient(black 0%, rgba(0,0,0,0.8) 50%, black 100%), url(assets/top-score-bg.png);
 }
 
 .topscores .topscoresleft {
@@ -378,6 +372,7 @@ body, html {
     letter-spacing: 2px;
     margin-left: 50px;
     margin-bottom: 0;
+    margin-top: 3px;
 }
 
 .topscores .twittercards .card-header h4 {
@@ -389,8 +384,8 @@ body, html {
 
 .topscores .twittercards .card-header .twitterlogo{
     position: absolute; /* Relative to .cardheader */
-    right: 15px;
-    top: 15px;
+    right: 16px;
+    top: 16px;
 }
 
 .topscores .twittercards .card-body{
@@ -399,7 +394,7 @@ body, html {
 }
 
 .topscores .twittercards h5 {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .topscores .twittercards p {
@@ -408,20 +403,112 @@ body, html {
 }
 
 /* Newsletter content */
-.newsletter{
-    background-image: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(0,0,0,1) 100%), url(assets/newsletter-bg.jpg);
+.newsletter {
+    background-image: linear-gradient(black 0%, transparent 10%, transparent 90%, black 100%), url(assets/newsletter-bg.jpg);
+    text-align: left;
 }
 
-/* footer */
-.footer{
-    background-color: rgba(0,0,0,1);
+.newsletter h3 {
+    font-size: 16px;
+    margin-top: 10vh;
 }
 
-.footer-line{
-    border-top: .5px solid var(--gray);
+.newsletter h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
-.vertical-links > li {
-    display: inline-block;
-    list-style: none;
+.newsletter p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* Newsletter Form */
+.newsletter form {
+    position: relative;
+}
+
+.newsletter form input[type="text"] {
+    border: 1px solid grey;
+    font-size: 20px;
+    color: #ffc107;
+}
+
+/* Placeholder input color */
+::-webkit-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::-moz-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::-ms-input-placeholder {
+    color: #ffc107 !important;
+}
+
+::placeholder {
+    color: #ffc107 !important;
+}
+
+.newsletter form p {
+    color: grey;
+    position: absolute; /* Relative to form */
+    font-size: 10px;
+    left: 12px;
+    top: 1px;
+}
+
+.newsletter form button {
+    padding: 9px;
+}
+
+/* Navigation Bar */
+.navigation {
+    background-color: black;
+    height: 35vh;
+    padding: 0;
+}
+
+.navigation a {
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 0px 2vw;
+    word-break: keep-all;
+}
+
+.navigation a span {
+    white-space: nowrap;
+    transition: all 0.8s ease 0s; /* Hover off transition */
+}
+
+.navigation a span:hover {
+    transition: all 0.8 ease 0s; /* Hover on transtion */
+    color: #ffc107 !important;
+}
+
+.navigation .socialmedialogo {
+    width: 100% !important;
+}
+
+.navigation hr {
+    border-top: 1px solid grey;
+}
+
+/* Footer */
+.footer p {
+    font-size: 14px;
+    color: grey;
+}
+
+.footer .col-lg-6 {
+    text-align: center;
+}
+
+.footer a {
+    margin: 0;
 }
