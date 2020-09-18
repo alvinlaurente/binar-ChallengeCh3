@@ -5,6 +5,7 @@ body, html {
     color: white;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
 
 /* Navbar */
@@ -33,8 +34,7 @@ body, html {
 }
 
 .customnavbar a {
-    text-decoration: none;
-    color: rgb(255,255,255) !important;
+    color: white !important;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
     transition: all 0.8s ease 0s; /* Hover off transition */
 }
@@ -69,7 +69,7 @@ body, html {
 .playnow .container .display-1 {
     margin-top: 25vh;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -100,14 +100,9 @@ body, html {
 .playnow .to-gameoption .display-3 {
     font-family: 'Bebas Neue', cursive;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 0px;
-}
-
-.playnow .to-gameoption a {
-    color: white;
 }
 
 .playnow .to-gameoption .icon {
@@ -142,7 +137,7 @@ body, html {
     100% {
         stroke-dashoffset: 80;
         stroke: #ffc107;
-        fill: #ffc107;
+        fill: transparent;
     }
 }
 
@@ -181,7 +176,7 @@ body, html {
 }
 
 .gameoption .carousel-indicators .active {
-    background-color: rgba(255,255,255,1) !important;
+    background-color: white !important;
 }
 
 .carousel-control-prev, .carousel-control-next{
@@ -416,11 +411,11 @@ body, html {
 
 .newsletter h3 {
     font-size: 16px;
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 .newsletter h1 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -474,19 +469,31 @@ body, html {
 /* Navigation Bar */
 .navigation {
     background-color: black;
-    height: 30vh;
+    height: 35vh;
+    padding: 0;
 }
+
 .navigation a {
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: white;
     font-size: 14px;
-    margin: 0px 20px;
+    margin: 0px 2vw;
+    word-break: keep-all;
 }
 
-.navigation .logo {
+.navigation a span {
+    white-space: nowrap;
+    transition: all 0.8s ease 0s; /* Hover off transition */
+}
+
+.navigation a span:hover {
+    transition: all 0.8 ease 0s; /* Hover on transtion */
+    color: #ffc107 !important;
+}
+
+.navigation .socialmedialogo {
     width: 100% !important;
-    text-align: right;
 }
 
 .navigation hr {
@@ -500,7 +507,7 @@ body, html {
 }
 
 .footer .col-lg-6 {
-    text-align: right;
+    text-align: center;
 }
 
 .footer a {

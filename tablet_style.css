@@ -43,4 +43,9 @@
     .sysreq p {
         font-size: 1.5vw;
     }
+
+    /* Navigation */
+    .navigation {
+        height: 25vh;
+    }
 }

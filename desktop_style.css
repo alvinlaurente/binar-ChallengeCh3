@@ -85,7 +85,7 @@
     }
 
     .sysreq h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .sysreq h2 {
@@ -106,5 +106,20 @@
         top: 150px;
         width: 350px;
         text-align: left;
+    }
+
+    /* Newsletter content */
+    .newsletter h1 {
+        font-size: 44px;
+    }
+
+    /* Navigation */
+    .navigation {
+        height: 15vh;
+    }
+
+    /* Footer */
+    .footer .col-lg-6 {
+        text-align: right;
     }
 }
