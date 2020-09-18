@@ -16,11 +16,11 @@
     }
 
     /* Jumbotron Play Now content */
-    .playnow .container .display-1 {
+    .playnow .container h1 {
         font-size: 10vh;
     }
 
-    .playnow .container .display-2 {
+    .playnow .container h2 {
         font-size: 3vh;
     }
 
@@ -28,7 +28,7 @@
         font-size: 2vh;
     }
 
-    .playnow .to-gameoption .display-3 {
+    .playnow .to-gameoption h3 {
         font-size: 2vh;
     }
     
@@ -120,7 +120,7 @@
 
     /* Footer */
     .footer .col-lg-6 {
-        text-align: right;
+        text-align: right !important;
     }
 
     .footer .col-lg-4 {

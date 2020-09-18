@@ -15,6 +15,7 @@ body, html {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+    background-color: #ffc107;
     position: fixed !important;
     z-index: 1;
 }
@@ -382,13 +383,13 @@ body, html {
     margin-bottom: 0;
 }
 
-.topscores .twittercards .card-header .twitterlogo{
+.topscores .twittercards .card-header .twitterlogo {
     position: absolute; /* Relative to .cardheader */
     right: 16px;
     top: 16px;
 }
 
-.topscores .twittercards .card-body{
+.topscores .twittercards .card-body {
     text-align: left;
     background-color: rgba(0,0,0,0.5);
 }
