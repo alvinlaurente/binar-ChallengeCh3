@@ -69,9 +69,10 @@
   background-image: linear-gradient(to bottom, transparent 70%, black 100%), url(assets/main-bg.jpg);
 }
 
-.playnow .container {
-  /* Play Now button */
-}
+/* .playnow .container {
+} */
+
+/* Play Now button */
 
 .playnow .container .display-1 {
   margin-top: 25vh;
