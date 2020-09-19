@@ -3,12 +3,7 @@
 @media (min-width: 992px) {
   /* Navbar */
   .customnavbar {
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.3
-    ) !important; /* Transparent navbar on Desktop */
+    background-color: rgba(0, 0, 0, 0.3) !important; /* Transparent navbar on Desktop */
   }
 
   .customnavbar .navbar-center {

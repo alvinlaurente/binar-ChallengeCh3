@@ -1,6 +1,5 @@
 /* Default mobile phone version (width <576px) */
 
-/* Common variables used */
 $primary-color: white;
 $secondary-color: #ffc107;
 $tertiary-color: grey;
@@ -68,20 +67,9 @@ html {
   margin-bottom: auto;
 }
 
-/* Separator - separate between backgrounds */
-.separator {
-  height: 5vh;
-  background-color: $quarternary-color;
-}
-
 /* Play Now content */
 .playnow {
-  background-image: linear-gradient(
-      to bottom,
-      $transparent-color 70%,
-      $quarternary-color 100%
-    ),
-    url(assets/main-bg.jpg);
+  background-image: linear-gradient(to bottom, $transparent-color 70%, $quarternary-color 100%), url(assets/main-bg.jpg);
 
   .container {
     h1 {
@@ -161,13 +149,7 @@ html {
 
 /* Game Option content */
 .gameoption {
-  background-image: linear-gradient(
-      $quarternary-color 0%,
-      $transparent-color 10%,
-      $transparent-color 90%,
-      $quarternary-color 100%
-    ),
-    url(assets/the-games-bg.jpg);
+  background-image: linear-gradient($quarternary-color 0%, $transparent-color 10%, $transparent-color 90%, $quarternary-color 100%), url(assets/the-games-bg.jpg);
 
   .container {
     text-align: left;
@@ -221,12 +203,7 @@ html {
 
 /* Features content */
 .features {
-  background-image: linear-gradient(
-      $quarternary-color 0%,
-      $transparent-color 50%,
-      $quarternary-color 100%
-    ),
-    url(assets/features.jpg);
+  background-image: linear-gradient($quarternary-color 0%, $transparent-color 50%, $quarternary-color 100%), url(assets/features.jpg);
   background-position: left;
 
   .col-md-6 {
@@ -327,12 +304,7 @@ html {
 
 /* System Requirements content */
 .sysreq {
-  background-image: linear-gradient(
-      $quarternary-color 0%,
-      $transparent-color 50%,
-      $quarternary-color 100%
-    ),
-    url(assets/requirements.png);
+  background-image: linear-gradient($quarternary-color 0%, $transparent-color 50%, $quarternary-color 100%), url(assets/requirements.png);
   padding: 10vh 0px;
 
   h5 {
@@ -366,12 +338,7 @@ html {
 
 /* Top Scores content */
 .topscores {
-  background-image: linear-gradient(
-      $quarternary-color 0%,
-      rgba(0, 0, 0, 0.8) 50%,
-      $quarternary-color 100%
-    ),
-    url(assets/top-score-bg.png);
+  background-image: linear-gradient($quarternary-color 0%, rgba(0, 0, 0, 0.8) 50%, $quarternary-color 100%), url(assets/top-score-bg.png);
 
   .topscoresleft {
     margin-bottom: 2vh;
@@ -454,13 +421,7 @@ html {
 
 /* Newsletter content */
 .newsletter {
-  background-image: linear-gradient(
-      $quarternary-color 0%,
-      $transparent-color 10%,
-      $transparent-color 90%,
-      $quarternary-color 100%
-    ),
-    url(assets/newsletter-bg.jpg);
+  background-image: linear-gradient($quarternary-color 0%, $transparent-color 10%, $transparent-color 90%, $quarternary-color 100%), url(assets/newsletter-bg.jpg);
   text-align: left;
 
   h3 {
@@ -500,6 +461,7 @@ html {
 
     button {
       padding: 9px;
+      font-weight: bold;
     }
   }
 }
@@ -535,6 +497,102 @@ html {
 
   .socialmedialogo {
     width: 100% !important;
+
+    .icon path {
+      fill: $primary-color;
+      stroke-width: 0.5;
+      stroke: $primary-color;
+    }
+
+    .icon.facebook path {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        animation: facebookicon 1s linear forwards;
+      }
+    }
+
+    @keyframes facebookicon {
+      0% {
+        stroke-dashoffset: 0;
+        fill: $transparent-color;
+      }
+    
+      100% {
+        stroke-dashoffset: 60;
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+    }
+
+    .icon.twitter path {
+      stroke-dasharray: 74;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        animation: twittericon 1s linear forwards;
+      }
+    }
+
+    @keyframes twittericon {
+      0% {
+        stroke-dashoffset: 0;
+        fill: $transparent-color;
+      }
+    
+      100% {
+        stroke-dashoffset: 74;
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+    }
+
+    .icon.youtube path {
+      fill: #FF1313;
+      stroke: #FF1313;
+      stroke-dasharray: 77;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        animation: youtubeicon 1s linear forwards;
+      }
+    }
+
+    @keyframes youtubeicon {
+      0% {
+        stroke-dashoffset: 0;
+        fill: $transparent-color;
+      }
+    
+      100% {
+        stroke-dashoffset: 77;
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+    }
+
+    .icon.twitch path {
+      stroke-dasharray: 70;
+      stroke-dashoffset: 0;
+
+      &:hover {
+        animation: twitchicon 1s linear forwards;
+      }
+    }
+
+    @keyframes twitchicon {
+      0% {
+        stroke-dashoffset: 0;
+        fill: $transparent-color;
+      }
+    
+      100% {
+        stroke-dashoffset: 70;
+        stroke: $secondary-color;
+        fill: $secondary-color;
+      }
+    }
   }
 
   hr {
